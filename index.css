@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    overflow-x : hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.displayed{
+    max-width: 100rem;
+    max-height: 100rem;
+    margin : 20rem;
+    position: relative;
+    justify-content: center;
+    transition: 0.7s;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.images img{
+    width: 25rem;
+    height: 18rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: all 0.7s;
+}
+
+.selected{
+    box-shadow: 0 0 3rem #ffffff;
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.prev, .next{
+    position: absolute;
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #000000;
+    border: none;
+    top: 50%;
+}
+
+.prev{
+    left: -3em;
+}
+
+.next{
+    right: -3em;
+}
+
+.displayed-image{
+    width: 74rem;
+    height: 50rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 2rem;
+    opacity: 1; /* Ensure initial opacity is set */
+    transition: all 0.7s;
+}
